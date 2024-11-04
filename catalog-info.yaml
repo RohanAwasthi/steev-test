@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "steev-test"
+  description: "steev-test"
+  labels:
+    system: web-apps
+  links:
+    - url: https://github.com/RohanAwasthi/steev-test
+      title: "steev-test"
+      icon: code
+  tags:
+    - java
+    - azure
+    - applicationtype-webapplication
+  annotations:
+    jenkins.io/github-folder: 'apache-azure-app/steev-test'
+    jenkins.io/job-full-name: 'apache-azure-app/steev-test'
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug:  RohanAwasthi/steev-test
+    backstage.io/linguist: https://github.com/RohanAwasthi/steev-test
+    azure.com/tag-selector: 'pid/steev-test'
+spec:
+  type: service
+  lifecycle: development
+  owner: group:default/adminstrator
